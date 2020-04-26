@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+          
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 back">               
+                <div id="container">
+                    <div id="login"> 
+                        <span><b>Enter your Name</b></span>
+                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav"></form>
+                            <div class="form-group">              
+                                <input type="text" class="form-control" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="" title="Enter name with a number" required>					   
+                            </div>                     
+                        </form>	
+                        <div id="start">Start <br> Quiz!</div>
+                    </div>  
+                    <div id="vold"><h5>voldare</h6></div> 
+                    <div id="quiz" style="display: none">
+                        
+                        <div id="timer" >
+                            <div id="counter"></div>
+                            <div id="btimeGauge"></div>
+                            <div id="timeGauge"></div>
+                        </div>
+                        <div id="qImg"><div id="qnsnumb"></div></div>
+                        <div id="choices">
+                            <div class="choice" id="lotus" onclick="checkAnswer('lotus')"></div>
+                            <div class="choice" id="dog" onclick="checkAnswer('dog')"></div>
+                            <div class="choice" id="cow" onclick="checkAnswer('cow')"></div>
+                            <div class="choice" id="kapila" onclick="checkAnswer('kapila')"></div>
+                        </div>
+                        <div id="question"></div>
+                        <div id="progress"></div>
+                    </div>
+                    <div id="scoreContainer" style="display: none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

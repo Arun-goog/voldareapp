@@ -1,0 +1,209 @@
+body{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#container{
+    margin : 20px auto;
+    background-image: url(https://subtlepatterns.com/patterns/kindajean.png);
+    height: 530px;
+    width : 310px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    padding-top:50px;
+    
+}
+#login{
+    text-align: center;
+    width: 310px;
+    padding: 0px;
+    overflow:hidden;
+    
+    padding: 10px;
+}
+#start{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:100px;
+    height:150px;
+    margin: auto;
+    padding-top: 30px;
+    border : 2px solid teal;
+    background-color: teal;
+    text-align: center;
+    cursor: pointer;
+    
+
+    margin: auto;
+    color : lightgrey;
+}
+#start:hover{
+    border: 3px solid #00664e;
+    background-color:  #00664e;
+ 
+}
+#vold{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+#qImg{
+    width : 150px;
+    height : 60px;
+    position: absolute;
+    background-color: teal;
+    text-align: center;
+    font-weight: bolder;
+    left : 0px;
+    top : 40px;
+}
+#qnsnumb{
+    margin:5px auto;
+    padding: 2px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+}
+#qImg img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+
+    background-color: violet;
+}
+
+#question{
+    width:310px;
+    height : 200px;
+    position: absolute;
+    right:0;
+    top: 100px;
+    padding-top: 20px;
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: small;
+    font-weight: bolder;
+}
+
+#choices{
+    width : 310px;
+    height: 200px;
+    position: absolute;
+    right : 0;
+    top : 300px;
+    padding-left : 10px;
+    
+    
+}
+.choice{
+    display: grid;
+    width : 200px;
+    color: white;
+    text-align: center;
+    font-size: small;
+    background-color: #4465a2; 
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    margin-top: 10px;
+
+}
+.choice:hover{
+    background-color: #26385a;
+    
+    font-weight: bold;
+}
+
+#timer{
+    position: absolute;
+    height : 60px;
+    width : 160px;
+    right:0;
+    top:40px;
+    text-align: center;
+    background-color:teal;
+}
+#counter{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#btimeGauge{
+    width : 130px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: auto;
+}
+#timeGauge{
+    height : 10px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 5px;
+}
+#progress{
+    width : 310px;
+    height: 30px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+    
+    
+}
+.prog{
+    width : 20px;
+    height : 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 100%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainer{
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.9;
+    height: 300px;
+    width : 310px;
+    border-radius: 0px;
+    box-shadow: 0px 5px 15px 0px;
+    
+    display: none;
+}
+#scoreContainer img{
+    margin-top: 100px;
+    margin-left: 125px;
+    
+}
+#scoreContainer p{
+    margin: auto;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
