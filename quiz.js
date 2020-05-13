@@ -13,6 +13,7 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
+
 // create our questions
 let questions = [
     {
@@ -134,6 +135,7 @@ function startQuiz(){
     login.style.display = "none";
     start.style.display = "none";
     vold.style.display  = "none";
+    var userName = document.getElementById("psw").value;
     renderQuestion();
     quiz.style.display = "block";
     renderProgress();
@@ -217,7 +219,7 @@ function scoreRender(){
               (scorePerCent >= 40) ? "img/3.png" :
               (scorePerCent >= 20) ? "img/2.png" :
               "img/1.png";
-    
+    scoreDiv.innerHTML += "<p>"+ userName +"</p>";
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
